@@ -1,0 +1,1 @@
+TrainingError is 3.8443282866406653E-10

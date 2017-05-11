@@ -1,0 +1,2 @@
+In validation
+ Avg Validation error is :0.010710924884643813
