@@ -1,0 +1,36 @@
+package decision;
+import java.io.*; 
+
+//Program tests decision tree
+ public class Tester 
+{ 
+
+//main method . .
+ public static void main(String[] args) throws IOException 
+
+{ 
+
+//construct decision tree 
+DecisionTree classifier = new DecisionTree(); 
+
+//load training data 
+ classifier.loadTrainingData("trainingfile"); 
+
+//build decision tree 
+classifier.buildTree(); 
+
+
+//classifier.entropy();
+classifier.classEntropy("entropyfile");
+//classifier.shanonEntropy("entropyfile");
+//classifier.coverage("trainingfile");
+
+//c1assify data
+classifier.classifyData("testfile","classifiedfile"); 
+
+//trainingError
+classifier.trainingError("trainingfile","outputfile");
+//validate tree 
+//classifier.validate("validationfile","errorfile"); 
+}
+}
